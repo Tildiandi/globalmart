@@ -2,32 +2,92 @@ Requirements List - GlobalMart
 
 Functional Requirements
 
-| ID | Requirement | Description |
-|----|-------------|-------------|
-| FR1 | User Registration | Users can create account with email/phone |
-| FR2 | User Login | Users can log in with credentials |
-| FR3 | Browse Products | Users can view products by category |
-| FR4 | Product Search | Users can search for products by keyword |
-| FR5 | Multi-currency Display | Products show prices in selected currency |
-| FR6 | Shopping Cart | Users can add/remove items from cart |
-| FR7 | Wishlist | Users can save products to wishlist |
-| FR8 | Price Comparison | Users can compare prices across sellers |
-| FR9 | Checkout | Users can proceed to checkout with cart items |
-| FR10 | Payment Simulation | Users can simulate payment (no real money) |
-| FR11 | Order History | Users can view past orders |
-| FR12 | Logistics Tracking | Users can track shipping status |
-| FR13 | User Reviews | Users can leave product reviews |
-| FR14 | Seller Information | Users can view seller details and ratings |
-| FR15 | Language Toggle | Users can switch between English and Chinese |
+ID: FR1
+Requirement: User Registration
+Description: Users can create account with email/phone
+
+ID: FR2
+Requirement: User Login
+Description: Users can log in with credentials
+
+ID: FR3
+Requirement: Browse Products
+Description: Users can view products by category
+
+ID: FR4
+Requirement: Product Search
+Description: Users can search for products by keyword
+
+ID: FR5
+Requirement: Multi-currency Display
+Description: Products show prices in selected currency
+
+ID: FR6
+Requirement: Shopping Cart
+Description: Users can add/remove items from cart
+
+ID: FR7
+Requirement: Wishlist
+Description: Users can save products to wishlist
+
+ID: FR8
+Requirement: Price Comparison
+Description: Users can compare prices across sellers
+
+ID: FR9
+Requirement: Checkout
+Description: Users can proceed to checkout with cart items
+
+ID: FR10
+Requirement: Payment Simulation
+Description: Users can simulate payment (no real money)
+
+ID: FR11
+Requirement: Order History
+Description: Users can view past orders
+
+ID: FR12
+Requirement: Logistics Tracking
+Description: Users can track shipping status
+
+ID: FR13
+Requirement: User Reviews
+Description: Users can leave product reviews
+
+ID: FR14
+Requirement: Seller Information
+Description: Users can view seller details and ratings
+
+ID: FR15
+Requirement: Language Toggle
+Description: Users can switch between English and Chinese
 
 Non-Functional Requirements
 
-| ID | Requirement | Description |
-|----|-------------|-------------|
-| NFR1 | Performance | Page load time under 3 seconds |
-| NFR2 | Usability | Interface must be intuitive for international users |
-| NFR3 | Security | User data encrypted; secure login |
-| NFR4 | Reliability | System uptime 99% |
-| NFR5 | Scalability | Should handle up to 1000 concurrent users |
-| NFR6 | Compatibility | Works on Chrome, Firefox, Safari |
-| NFR7 | Maintainability | Code should be modular and well-documented |
+ID: NFR1
+Requirement: Performance
+Description: Page load time under 3 seconds
+
+ID: NFR2
+Requirement: Usability
+Description: Interface must be intuitive for international users
+
+ID: NFR3
+Requirement: Security
+Description: User data encrypted; secure login
+
+ID: NFR4
+Requirement: Reliability
+Description: System uptime 99%
+
+ID: NFR5
+Requirement: Scalability
+Description: Should handle up to 1000 concurrent users
+
+ID: NFR6
+Requirement: Compatibility
+Description: Works on Chrome, Firefox, Safari
+
+ID: NFR7
+Requirement: Maintainability
+Description: Code should be modular and well-documented
