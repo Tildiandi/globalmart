@@ -1,0 +1,33 @@
+MoSCoW Priority Matrix - GlobalMart
+
+Must Have (Essential for launch)
+
+FR1: User Registration
+FR2: User Login
+FR3: Browse Products
+FR6: Shopping Cart
+FR9: Checkout
+FR10: Payment Simulation
+NFR1: Performance (load under 3 seconds)
+
+Should Have (Important but can work around)
+
+FR4: Product Search
+FR5: Multi-currency Display
+FR11: Order History
+FR13: User Reviews
+
+Could Have (Nice to have, lower priority)
+
+FR7: Wishlist
+FR8: Price Comparison
+FR12: Logistics Tracking
+FR15: Language Toggle
+NFR5: Scalability to 1000 users
+
+Won't Have (Not in scope for this project)
+
+FR14: Seller Information (simplify for demo)
+NFR7: Maintainability (nice but not a focus)
+Real payment integration (simulation only)
+Mobile app (web only)
