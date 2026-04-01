@@ -1,0 +1,67 @@
+Software Requirements Specification (SRS)
+GlobalMart - Cross-border E-commerce Experience Platform
+Version 1.0
+
+1. Introduction
+
+1.1 Purpose
+This document defines the requirements for GlobalMart, a cross-border e-commerce platform designed for international students in China.
+
+1.2 Scope
+GlobalMart will allow users to browse products, view prices in multiple currencies, manage shopping cart, simulate payments, and track orders.
+
+1.3 Target Users
+- International students in China
+- Age: 18-35
+- Tech-savvy, smartphone users
+- Need bilingual support
+
+2. Overall Description
+
+2.1 Product Perspective
+GlobalMart is a web-based application with frontend (HTML/CSS/JS), backend (Python/Flask), and SQLite database.
+
+2.2 User Characteristics
+- Technical Level: Moderate
+- Language: English or Chinese
+- Access: Desktop and mobile browsers
+
+3. Functional Requirements
+
+FR1: User Registration (Must)
+FR2: User Login (Must)
+FR3: Browse Products (Must)
+FR4: Product Search (Should)
+FR5: Multi-currency Display (Should)
+FR6: Shopping Cart (Must)
+FR7: Wishlist (Could)
+FR8: Price Comparison (Could)
+FR9: Checkout (Must)
+FR10: Payment Simulation (Must)
+FR11: Order History (Should)
+FR12: Logistics Tracking (Could)
+FR13: User Reviews (Should)
+FR15: Language Toggle (Could)
+
+4. Non-Functional Requirements
+
+NFR1: Performance - Page load under 3 seconds
+NFR2: Usability - Intuitive UI with clear navigation
+NFR3: Security - Password encryption, HTTPS
+NFR4: Reliability - 99% uptime
+NFR5: Scalability - 100 concurrent users for demo
+NFR6: Compatibility - Chrome, Firefox, Safari
+
+5. Constraints
+- Web-only (no mobile app)
+- Payment simulation only (no real payment)
+- 12-week development timeline
+- Team size: 2 developers
+
+6. Assumptions
+- Users have basic internet access
+- Users can read English or Chinese
+- Demo will be shown on desktop/laptop
+
+Version History
+Version 1.0 | Date: 2026-03-31 | Authors: Tilde, Asia
