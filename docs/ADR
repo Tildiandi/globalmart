@@ -12,34 +12,34 @@ We need an architecture that is:
 - Suitable for a web-based UI and a backend with a database
 
 ## Decision
-We will use a **monolithic, layered web application** with a **RESTful API** and an **MVC-style structure**.
+We will use a **monolithic, layered web application** with a RESTful API and an MVC-style structure.
 
-- The **frontend** is a web client (e.g., React) that consumes RESTful APIs.
-- The **backend** is a single application (e.g., Node.js/Express) exposing REST endpoints.
-- The **database** is a relational database (MySQL).
+- The frontend is a web client (e.g., React) that consumes RESTful APIs.
+- The backend is a single application (e.g., Node.js/Express) exposing REST endpoints.
+- The database is a relational database (MySQL).
 - The backend is organized into:
   - Controllers (API endpoints)
   - Services (business logic)
   - Repositories/DAOs (data access)
 
 ## Rationale
-- A monolithic, layered architecture is **simpler** to build and deploy than microservices.
+- A monolithic, layered architecture is simpler to build and deploy than microservices.
 - A RESTful API cleanly separates frontend and backend, allowing independent UI evolution.
-- MVC-style separation improves **maintainability** and **testability**.
+- MVC-style separation improves maintainability and testability.
 - Fits the **scope and constraints** of a student project (time, team size, infrastructure).
 
 ## Consequences
-**Positive:**
+Positive:
 - Faster development and onboarding.
 - Single deployable unit simplifies deployment and debugging.
 - Clear separation of concerns (UI, business logic, data access).
 
-**Negative:**
+Negative:
 - Limited flexibility for independent scaling of specific features.
 - Risk of increasing internal coupling if the monolith is not well-structured over time.
 
 ## Alternatives Considered
-- **Microservices architecture**  
+- Microservices architecture 
   Rejected due to higher operational complexity and overhead for this project size.
-- **Server-side rendered MVC only (no separate SPA frontend)**  
+- Server-side rendered MVC only (no separate SPA frontend) 
   Rejected to keep the frontend and backend more loosely coupled and to align with modern web app patterns.
