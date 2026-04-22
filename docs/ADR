@@ -1,0 +1,30 @@
+# Architecture Decision Record: GlobalMart
+
+## Title
+Choose architecture style for GlobalMart
+
+## Status
+Accepted
+
+## Context
+GlobalMart is a small-to-medium scale e-commerce web application for browsing products, managing a cart, and simulating checkout. The team size is small, and the project is for a course, with limited time and deployment complexity.
+
+## Decision
+We will use a **layered web application with RESTful API and MVC pattern**:
+
+- **Backend:** Monolithic server exposing **RESTful APIs** (e.g., Node.js/Express or Spring Boot).
+- **Frontend:** Web client (e.g., React/Vue) consuming the REST API.
+- **Architecture style:** Layered (Presentation, Application/Service, Data Access) with RESTful interfaces.
+- **Database:** Relational database (MySQL).
+
+## Rationale
+- Simpler to implement and deploy than microservices.
+- RESTful API cleanly separates frontend and backend.
+- MVC and layered architecture are easy to understand, test, and document.
+- Fits the scale and time constraints of the course project.
+
+## Consequences
+- + Faster development and easier debugging.
+- + Lower operational complexity (single deployable backend).
+- − Less flexible for independent scaling of services.
+- − Tight coupling inside the monolith if not structured carefully.
