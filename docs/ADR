@@ -1,30 +1,45 @@
-# Architecture Decision Record: GlobalMart
-
-## Title
-Choose architecture style for GlobalMart
+# ADR 0001: Architecture Style for GlobalMart
 
 ## Status
 Accepted
 
 ## Context
-GlobalMart is a small-to-medium scale e-commerce web application for browsing products, managing a cart, and simulating checkout. The team size is small, and the project is for a course, with limited time and deployment complexity.
+GlobalMart is a small-to-medium scale e-commerce web application where users can browse products, manage a cart, use a wishlist, and simulate checkout.  
+The project is developed by a small team within a limited time frame as part of a course.  
+We need an architecture that is:
+- Simple to implement and understand
+- Easy to deploy
+- Suitable for a web-based UI and a backend with a database
 
 ## Decision
-We will use a **layered web application with RESTful API and MVC pattern**:
+We will use a **monolithic, layered web application** with a **RESTful API** and an **MVC-style structure**.
 
-- **Backend:** Monolithic server exposing **RESTful APIs** (e.g., Node.js/Express or Spring Boot).
-- **Frontend:** Web client (e.g., React/Vue) consuming the REST API.
-- **Architecture style:** Layered (Presentation, Application/Service, Data Access) with RESTful interfaces.
-- **Database:** Relational database (MySQL).
+- The **frontend** is a web client (e.g., React) that consumes RESTful APIs.
+- The **backend** is a single application (e.g., Node.js/Express) exposing REST endpoints.
+- The **database** is a relational database (MySQL).
+- The backend is organized into:
+  - Controllers (API endpoints)
+  - Services (business logic)
+  - Repositories/DAOs (data access)
 
 ## Rationale
-- Simpler to implement and deploy than microservices.
-- RESTful API cleanly separates frontend and backend.
-- MVC and layered architecture are easy to understand, test, and document.
-- Fits the scale and time constraints of the course project.
+- A monolithic, layered architecture is **simpler** to build and deploy than microservices.
+- A RESTful API cleanly separates frontend and backend, allowing independent UI evolution.
+- MVC-style separation improves **maintainability** and **testability**.
+- Fits the **scope and constraints** of a student project (time, team size, infrastructure).
 
 ## Consequences
-- + Faster development and easier debugging.
-- + Lower operational complexity (single deployable backend).
-- − Less flexible for independent scaling of services.
-- − Tight coupling inside the monolith if not structured carefully.
+**Positive:**
+- Faster development and onboarding.
+- Single deployable unit simplifies deployment and debugging.
+- Clear separation of concerns (UI, business logic, data access).
+
+**Negative:**
+- Limited flexibility for independent scaling of specific features.
+- Risk of increasing internal coupling if the monolith is not well-structured over time.
+
+## Alternatives Considered
+- **Microservices architecture**  
+  Rejected due to higher operational complexity and overhead for this project size.
+- **Server-side rendered MVC only (no separate SPA frontend)**  
+  Rejected to keep the frontend and backend more loosely coupled and to align with modern web app patterns.
